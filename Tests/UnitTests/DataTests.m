@@ -6,7 +6,7 @@
 //
 
 #import "DataTests.h"
-#import "NSData+Gzip.h"
+#import "GZIP.h"
 
 
 @implementation DataTests
