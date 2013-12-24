@@ -1,3 +1,7 @@
+Version 1.0.2
+
+- Now complies with -Weverything warning level
+
 Version 1.0.1
 
 - Added podspec

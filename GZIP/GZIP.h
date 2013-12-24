@@ -1,7 +1,7 @@
 //
-//  NSData+GZIP.h
+//  GZIP.h
 //
-//  Version 1.0
+//  Version 1.0.2
 //
 //  Created by Nick Lockwood on 03/06/2012.
 //  Copyright (C) 2012 Charcoal Design
