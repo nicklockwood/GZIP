@@ -1,7 +1,7 @@
 //
 //  GZIP.m
 //
-//  Version 1.0.2
+//  Version 1.0.3
 //
 //  Created by Nick Lockwood on 03/06/2012.
 //  Copyright (C) 2012 Charcoal Design
@@ -100,7 +100,7 @@ static const NSUInteger ChunkSize = 16384;
             {
                 if (stream.total_out >= [data length])
                 {
-                    data.length += [self length] * 0.5;
+                    data.length += [self length] / 2;
                 }
                 stream.next_out = (uint8_t *)[data mutableBytes] + stream.total_out;
                 stream.avail_out = (uInt)([data length] - stream.total_out);

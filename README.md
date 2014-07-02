@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/nicklockwood/GZIP.svg)](https://travis-ci.org/nicklockwood/GZIP)
+
+
 Purpose
 --------------
 
@@ -7,7 +10,7 @@ GZIP is category on NSData that provides simple gzip compression and decompressi
 Supported OS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 7.0 / Mac OS 10.9 (Xcode 5.0, Apple LLVM compiler 5.0)
+* Supported build target - iOS 8.0 / Mac OS 10.9 (Xcode 6.0, Apple LLVM compiler 6.0)
 * Earliest supported deployment target - iOS 5.0 / Mac OS 10.7
 * Earliest compatible deployment target - iOS 4.3 / Mac OS 10.6
 
@@ -46,3 +49,27 @@ This method is equivalent to calling `gzippedDataWithCompressionLevel:` with the
     - (NSData *)gunzippedData;
     
 This method will unzip data that was compressed using the deflate algorithm and return the result.
+
+
+Release Notes
+--------------
+
+Version 1.0.3
+
+- Fixed new warnings in Xcode 6
+- Added Travis CI support
+
+Version 1.0.2
+
+- Now complies with -Weverything warning level
+
+Version 1.0.1
+
+- Added podspec
+- Renamed source files
+- Verified compliance with iOS 7 / Mac OS 10.8
+- Verified compliance with -Wextra warning level
+
+Version 1.0
+
+- Initial release.

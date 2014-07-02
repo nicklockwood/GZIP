@@ -1,15 +1,21 @@
 //
-//  DataTests.m
+//  FastCoderTests.m
 //
 //  Created by Nick Lockwood on 12/01/2012.
 //  Copyright (c) 2012 Charcoal Design. All rights reserved.
 //
 
-#import "DataTests.h"
+
+#import <XCTest/XCTest.h>
 #import "GZIP.h"
 
 
-@implementation DataTests
+@interface UnitTests : XCTestCase
+
+@end
+
+
+@implementation UnitTests
 
 - (void)testOutputEqualsInput
 {
@@ -22,17 +28,17 @@
     
     //decode
     NSData *outputData = [compressedData gunzippedData];
-    NSString *outputString = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding]; 
-    NSAssert([outputString isEqualToString:inputString], @"OutputEqualsInput test failed");
+    NSString *outputString = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
+    XCTAssertEqualObjects(outputString, inputString, @"OutputEqualsInput test failed");
 }
 
 - (void)testZeroLengthInput
 {
     NSData *data = [[NSData data] gzippedData];
-    NSAssert(data == nil, @"ZeroLengthInput test failed");
+    XCTAssertNil(data, @"ZeroLengthInput test failed");
     
     data = [[NSData data] gunzippedData];
-    NSAssert(data == nil, @"ZeroLengthInput test failed");
+    XCTAssertNil(data, @"ZeroLengthInput test failed");
 }
 
 @end
