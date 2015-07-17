@@ -10,8 +10,8 @@ GZIP is category on NSData that provides simple gzip compression and decompressi
 Supported OS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 8.0 / Mac OS 10.9 (Xcode 6.0, Apple LLVM compiler 6.0)
-* Earliest supported deployment target - iOS 5.0 / Mac OS 10.7
+* Supported build target - iOS 8.4 / Mac OS 10.10 (Xcode 6.4, Apple LLVM compiler 6.1)
+* Earliest supported deployment target - iOS 7.0 / Mac OS 10.9
 * Earliest compatible deployment target - iOS 4.3 / Mac OS 10.6
 
 NOTE: 'Supported' means that the library has been tested with this version. 'Compatible' means that the library should work on this iOS version (i.e. it doesn't rely on any unavailable SDK features) but is no longer being tested for compatibility and may require tweaking or bug fixes to run correctly.
@@ -32,7 +32,7 @@ All the GZIP methods should be safe to call from multiple threads concurrently.
 Installation
 --------------
 
-To use the GZIP category in an app, just drag the category files (test files and assets are not needed) into your project and import the header file into any class where you wish to make use of the GZIP functionality. You will also need to include the libz.dylib.
+To use the GZIP category in an app, just drag the category files (test files and assets are not needed) into your project and import the header file into any class where you wish to make use of the GZIP functionality. There is no need to include the libz.dylib, as GZIP locates it automatically at runtime.
 
 
 NSData Extensions
@@ -50,9 +50,20 @@ This method is equivalent to calling `gzippedDataWithCompressionLevel:` with the
     
 This method will unzip data that was compressed using the deflate algorithm and return the result.
 
+    - (BOOL)isGzippedData;
+    
+This method will return YES if the data is gzip-encoded.
+
 
 Release Notes
 --------------
+
+Version 1.1
+
+- Added `isGzippedData` method.
+- GZIP will no longer re-encode already-gzipped data, nor try  (and fail) to decode ungzipped data.
+- GZIP now uses dlopen to load the libz.dylib at runtime, so there's no need to include it manually in your project.
+- Fixed warnings and errors on Xcode 7
 
 Version 1.0.3
 

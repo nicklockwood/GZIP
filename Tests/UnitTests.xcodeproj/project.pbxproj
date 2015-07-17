@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0122477C1964216C00BDEF15 /* GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122477B1964216C00BDEF15 /* GZIP.m */; };
-		0122477E1964231800BDEF15 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0122477D1964231800BDEF15 /* libz.dylib */; };
 		01244B141934E926000BF3CD /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01244B131934E926000BF3CD /* UnitTests.m */; };
 		01D28C891907BFC80021C719 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D28C881907BFC80021C719 /* XCTest.framework */; };
 		01D28C8A1907BFC80021C719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D28C6F1907BFC80021C719 /* Foundation.framework */; };
@@ -33,7 +32,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0122477E1964231800BDEF15 /* libz.dylib in Frameworks */,
 				01D28C891907BFC80021C719 /* XCTest.framework in Frameworks */,
 				01D28C8B1907BFC80021C719 /* UIKit.framework in Frameworks */,
 				01D28C8A1907BFC80021C719 /* Foundation.framework in Frameworks */,
@@ -61,7 +59,9 @@
 				01D28C6E1907BFC80021C719 /* Frameworks */,
 				01D28C6D1907BFC80021C719 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		01D28C6D1907BFC80021C719 /* Products */ = {
 			isa = PBXGroup;
@@ -126,7 +126,7 @@
 		01D28C641907BFC80021C719 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Charcoal Design";
 				TargetAttributes = {
 					01D28C861907BFC80021C719 = {
@@ -204,6 +204,7 @@
 				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -248,6 +249,8 @@
 					"-Wno-objc-missing-property-synthesis",
 					"-Wno-sign-compare",
 					"-Wno-documentation-unknown-command",
+					"-Wno-undef",
+					"-Wno-reserved-id-macro",
 				);
 			};
 			name = Debug;
@@ -320,6 +323,8 @@
 					"-Wno-objc-missing-property-synthesis",
 					"-Wno-sign-compare",
 					"-Wno-documentation-unknown-command",
+					"-Wno-undef",
+					"-Wno-reserved-id-macro",
 				);
 			};
 			name = Release;
@@ -338,6 +343,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.charcoaldesign.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UnitTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -354,6 +360,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.charcoaldesign.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = UnitTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
