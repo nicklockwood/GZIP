@@ -7,21 +7,22 @@
 
 
 #import <XCTest/XCTest.h>
+#include <stdlib.h>
 #import "GZIP.h"
 
-#include <stdlib.h>
 
-static NSData* createRandomNSData()
+static NSData *createRandomNSData()
 {
-    NSUInteger size = 10*1024*1024;
-    NSUInteger chunkLenght = 4;
-    NSMutableData *data = [NSMutableData dataWithCapacity:size];
-    for (NSUInteger index = 0; index < size/chunkLenght; index++ ) {
-        u_int32_t randomBits = arc4random();
-        [data appendBytes:(void*)&randomBits length:chunkLenght];
+    NSUInteger size = 10 * 1024 * 1024; // 10mb
+    NSMutableData *data = [NSMutableData dataWithLength:size];
+    u_int32_t *bytes = (u_int32_t *)data.mutableBytes;
+    for (NSUInteger index = 0; index < size/sizeof(u_int32_t); index++)
+    {
+        bytes[index] = arc4random();
     }
     return data;
 }
+
 
 @interface UnitTests : XCTestCase
 

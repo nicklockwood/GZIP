@@ -127,7 +127,7 @@ static void *libzOpen()
     if (inflateInit2(&stream, 47) == Z_OK)
     {
         int status = Z_OK;
-        output = [NSMutableData dataWithLength:(NSUInteger)(self.length * 1.5)];
+        output = [NSMutableData dataWithCapacity:self.length * 2];
         while (status == Z_OK)
         {
             if (stream.total_out >= output.length)
@@ -146,9 +146,7 @@ static void *libzOpen()
             }
         }
     }
-    
-    dlclose(libz);
-    
+
     return output;
 }
 

@@ -60,7 +60,8 @@ Release Notes
 
 Version 1.1.1
 
-- Fixed crash on iOS 9
+- Fixed crash on iOS 9.
+- Added performance tests.
 
 Version 1.1
 
