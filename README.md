@@ -58,6 +58,10 @@ This method will return YES if the data is gzip-encoded.
 Release Notes
 --------------
 
+Version 1.1.1
+
+- Fixed crash on iOS 9
+
 Version 1.1
 
 - Added `isGzippedData` method.
