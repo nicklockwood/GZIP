@@ -66,12 +66,10 @@ static NSData *createRandomNSData()
 
     //compress
     NSData *compressedData = [inputData gzippedData];
-    inputString = [[NSString alloc] initWithData:compressedData encoding:NSUTF8StringEncoding];
 
     //compress again
     NSData *outputData = [compressedData gzippedData];
-    NSString *outputString = [[NSString alloc] initWithData:outputData encoding:NSUTF8StringEncoding];
-    XCTAssertEqualObjects(outputString, inputString);
+    XCTAssertEqualObjects(compressedData, outputData);
 }
 
 - (void)testZeroLengthInput
