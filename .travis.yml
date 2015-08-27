@@ -3,4 +3,4 @@ before_script:
 - brew update
 - brew upgrade xctool || true
 osx_image: xcode6.4
-script: xctool test -project Tests/UnitTests.xcodeproj -scheme UnitTests -sdk iphonesimulator
+script: xcodebuild test -project GZIP.xcodeproj -scheme GZIP-iOS -sdk iphonesimulator
