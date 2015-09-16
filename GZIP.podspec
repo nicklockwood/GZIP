@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/nicklockwood/GZIP'
   s.author       = { "Nick Lockwood" => "support@charcoaldesign.co.uk" }
   s.source       = { :git => "https://github.com/nicklockwood/GZIP.git", :tag => "1.1.1" }
-  s.source_files = 'GZIP'
+  s.source_files = 'GZIP/*.{h,m}'
   s.requires_arc = false
   s.ios.deployment_target = '4.3'
   s.osx.deployment_target = '10.6'
