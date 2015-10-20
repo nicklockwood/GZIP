@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3AB1CB061B8F671100D54E3D"
+               BlueprintIdentifier = "3AE36E981BD5BE6E0017A780"
                BuildableName = "GZIP.framework"
-               BlueprintName = "GZIP-watchOS"
+               BlueprintName = "GZIP-tvOS"
                ReferencedContainer = "container:GZIP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3AB1CB061B8F671100D54E3D"
+            BlueprintIdentifier = "3AE36E981BD5BE6E0017A780"
             BuildableName = "GZIP.framework"
-            BlueprintName = "GZIP-watchOS"
+            BlueprintName = "GZIP-tvOS"
             ReferencedContainer = "container:GZIP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3AB1CB061B8F671100D54E3D"
+            BlueprintIdentifier = "3AE36E981BD5BE6E0017A780"
             BuildableName = "GZIP.framework"
-            BlueprintName = "GZIP-watchOS"
+            BlueprintName = "GZIP-tvOS"
             ReferencedContainer = "container:GZIP.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
