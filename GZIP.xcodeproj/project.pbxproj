@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A733BD11BA9B6BD00089A82 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE36CBF1B8F598E00923C2D /* GZIP.framework */; settings = {ASSET_TAGS = (); }; };
-		3A733BD81BA9B6F800089A82 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A733BD71BA9B6F800089A82 /* UnitTests.m */; settings = {ASSET_TAGS = (); }; };
+		3A0A27711BD7E412007B023D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
+		3A0A27721BD7E413007B023D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
+		3A733BD11BA9B6BD00089A82 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE36CBF1B8F598E00923C2D /* GZIP.framework */; };
+		3A733BD81BA9B6F800089A82 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A733BD71BA9B6F800089A82 /* UnitTests.m */; };
 		3AB1CB151B8F6BA300D54E3D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AC7ECCA1B9790C4009040EF /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CC31B8F598E00923C2D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CCC1B8F59E600923C2D /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AE36CCD1B8F59E600923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; settings = {ASSET_TAGS = (); }; };
-		3AE36CD21B8F5AEF00923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; settings = {ASSET_TAGS = (); }; };
+		3AE36CCD1B8F59E600923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
+		3AE36CD21B8F5AEF00923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
 		3AE36CD51B8F5AEF00923C2D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CD61B8F5AEF00923C2D /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE36EA11BD5BFAE0017A780 /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE36EDE1BD5C59D0017A780 /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,7 @@
 		3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GZIP.h"; sourceTree = "<group>"; };
 		3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GZIP.m"; sourceTree = "<group>"; };
 		3AE36CDB1B8F5AEF00923C2D /* GZIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE36E991BD5BE6E0017A780 /* GZIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3AE36CD31B8F5AEF00923C2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AE36E951BD5BE6E0017A780 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,6 +112,7 @@
 				3AE36CDB1B8F5AEF00923C2D /* GZIP.framework */,
 				3AB1CB071B8F671100D54E3D /* GZIP.framework */,
 				3A733BCC1BA9B6BD00089A82 /* GZIPTests.xctest */,
+				3AE36E991BD5BE6E0017A780 /* GZIP.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +155,15 @@
 			files = (
 				3AE36CD51B8F5AEF00923C2D /* GZIP.h in Headers */,
 				3AE36CD61B8F5AEF00923C2D /* NSData+GZIP.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AE36E961BD5BE6E0017A780 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE36EA11BD5BFAE0017A780 /* GZIP.h in Headers */,
+				3AE36EDE1BD5C59D0017A780 /* NSData+GZIP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,13 +242,31 @@
 			productReference = 3AE36CDB1B8F5AEF00923C2D /* GZIP.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		3AE36E981BD5BE6E0017A780 /* GZIP-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AE36EA01BD5BE6E0017A780 /* Build configuration list for PBXNativeTarget "GZIP-tvOS" */;
+			buildPhases = (
+				3AE36E941BD5BE6E0017A780 /* Sources */,
+				3AE36E951BD5BE6E0017A780 /* Frameworks */,
+				3AE36E961BD5BE6E0017A780 /* Headers */,
+				3AE36E971BD5BE6E0017A780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GZIP-tvOS";
+			productName = GZIP;
+			productReference = 3AE36E991BD5BE6E0017A780 /* GZIP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3AE36CB61B8F598E00923C2D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				TargetAttributes = {
 					3A733BCB1BA9B6BD00089A82 = {
 						CreatedOnToolsVersion = 7.0;
@@ -236,6 +276,9 @@
 					};
 					3AE36CBE1B8F598E00923C2D = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					3AE36E981BD5BE6E0017A780 = {
+						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
@@ -254,6 +297,7 @@
 				3AE36CBE1B8F598E00923C2D /* GZIP-iOS */,
 				3AE36CD01B8F5AEF00923C2D /* GZIP-OSX */,
 				3AB1CB061B8F671100D54E3D /* GZIP-watchOS */,
+				3AE36E981BD5BE6E0017A780 /* GZIP-tvOS */,
 				3A733BCB1BA9B6BD00089A82 /* GZIPTests */,
 			);
 		};
@@ -288,6 +332,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AE36E971BD5BE6E0017A780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -303,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0A27711BD7E412007B023D /* NSData+GZIP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +371,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE36CD21B8F5AEF00923C2D /* NSData+GZIP.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AE36E941BD5BE6E0017A780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0A27721BD7E413007B023D /* NSData+GZIP.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,11 +583,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GZIP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -543,11 +604,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = GZIP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -556,6 +618,47 @@
 				PRODUCT_NAME = GZIP;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3AE36E9E1BD5BE6E0017A780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GZIP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.charcoaldesign.GZIP;
+				PRODUCT_NAME = GZIP;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		3AE36E9F1BD5BE6E0017A780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GZIP/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.charcoaldesign.GZIP;
+				PRODUCT_NAME = GZIP;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -569,6 +672,7 @@
 				3A733BD61BA9B6BD00089A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AB1CB0C1B8F671100D54E3D /* Build configuration list for PBXNativeTarget "GZIP-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -602,6 +706,15 @@
 			buildConfigurations = (
 				3AE36CD91B8F5AEF00923C2D /* Debug */,
 				3AE36CDA1B8F5AEF00923C2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AE36EA01BD5BE6E0017A780 /* Build configuration list for PBXNativeTarget "GZIP-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AE36E9E1BD5BE6E0017A780 /* Debug */,
+				3AE36E9F1BD5BE6E0017A780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
