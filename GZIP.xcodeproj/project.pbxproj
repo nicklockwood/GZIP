@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A733BD11BA9B6BD00089A82 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE36CBF1B8F598E00923C2D /* GZIP.framework */; settings = {ASSET_TAGS = (); }; };
-		3A733BD81BA9B6F800089A82 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A733BD71BA9B6F800089A82 /* UnitTests.m */; settings = {ASSET_TAGS = (); }; };
+		3A733BD11BA9B6BD00089A82 /* GZIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE36CBF1B8F598E00923C2D /* GZIP.framework */; };
+		3A733BD81BA9B6F800089A82 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A733BD71BA9B6F800089A82 /* UnitTests.m */; };
 		3AB1CB151B8F6BA300D54E3D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AC7ECCA1B9790C4009040EF /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CC31B8F598E00923C2D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CCC1B8F59E600923C2D /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AE36CCD1B8F59E600923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; settings = {ASSET_TAGS = (); }; };
-		3AE36CD21B8F5AEF00923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; settings = {ASSET_TAGS = (); }; };
+		3AE36CCD1B8F59E600923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
+		3AE36CD21B8F5AEF00923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
 		3AE36CD51B8F5AEF00923C2D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CD61B8F5AEF00923C2D /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -527,7 +527,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = GZIP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -547,7 +546,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = GZIP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -569,6 +567,7 @@
 				3A733BD61BA9B6BD00089A82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3AB1CB0C1B8F671100D54E3D /* Build configuration list for PBXNativeTarget "GZIP-watchOS" */ = {
 			isa = XCConfigurationList;
