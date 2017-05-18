@@ -1,7 +1,7 @@
 //
 //  GZIP.m
 //
-//  Version 1.1.1
+//  Version 1.2
 //
 //  Created by Nick Lockwood on 03/06/2012.
 //  Copyright (C) 2012 Charcoal Design
@@ -33,7 +33,6 @@
 
 #import "NSData+GZIP.h"
 #import <zlib.h>
-#import <dlfcn.h>
 
 
 #pragma clang diagnostic ignored "-Wcast-qual"
@@ -41,28 +40,12 @@
 
 @implementation NSData (GZIP)
 
-static void *libzOpen()
-{
-    static void *libz;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        libz = dlopen("/usr/lib/libz.dylib", RTLD_LAZY);
-    });
-    return libz;
-}
-
 - (NSData *)gzippedDataWithCompressionLevel:(float)level
 {
     if (self.length == 0 || [self isGzippedData])
     {
         return self;
     }
-
-    void *libz = libzOpen();
-    int (*deflateInit2_)(z_streamp, int, int, int, int, int, const char *, int) =
-    (int (*)(z_streamp, int, int, int, int, int, const char *, int))dlsym(libz, "deflateInit2_");
-    int (*deflate)(z_streamp, int) = (int (*)(z_streamp, int))dlsym(libz, "deflate");
-    int (*deflateEnd)(z_streamp) = (int (*)(z_streamp))dlsym(libz, "deflateEnd");
 
     z_stream stream;
     stream.zalloc = Z_NULL;
@@ -108,12 +91,6 @@ static void *libzOpen()
     {
         return self;
     }
-
-    void *libz = libzOpen();
-    int (*inflateInit2_)(z_streamp, int, const char *, int) =
-    (int (*)(z_streamp, int, const char *, int))dlsym(libz, "inflateInit2_");
-    int (*inflate)(z_streamp, int) = (int (*)(z_streamp, int))dlsym(libz, "inflate");
-    int (*inflateEnd)(z_streamp) = (int (*)(z_streamp))dlsym(libz, "inflateEnd");
 
     z_stream stream;
     stream.zalloc = Z_NULL;

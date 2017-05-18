@@ -7,7 +7,6 @@
 
 
 #import <XCTest/XCTest.h>
-#include <stdlib.h>
 #import "GZIP.h"
 
 
