@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.2.2](https://github.com/nicklockwood/GZIP/releases/tag/1.2.1) (2018-09-18)
+
+- Fixed Xcode 10 warnings
+
 ## [1.2.1](https://github.com/nicklockwood/GZIP/releases/tag/1.2.1) (2017-07-03)
 
 - Fixed incorrect case in header import
