@@ -13,7 +13,7 @@ GZIP is category on NSData that provides simple gzip compression and decompressi
 Supported OS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 12.0 / Mac OS 10.13 (Xcode 10.0)
+* Supported build target - iOS 12.0 / Mac OS 10.14 (Xcode 10.1)
 * Earliest supported deployment target - iOS 9.0 / Mac OS 10.12
 * Earliest compatible deployment target - iOS 8.0 / Mac OS 10.6
 

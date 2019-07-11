@@ -1,6 +1,12 @@
 # Change Log
 
-## [1.2.2](https://github.com/nicklockwood/GZIP/releases/tag/1.2.1) (2018-09-18)
+## [1.2.3](https://github.com/nicklockwood/GZIP/releases/tag/1.2.3) (2018-11-19)
+
+- Fixed Xcode 10.1 warnings
+- Added compatibility regression tests
+- Switched to more-conventional MIT license
+
+## [1.2.2](https://github.com/nicklockwood/GZIP/releases/tag/1.2.2) (2018-09-18)
 
 - Fixed Xcode 10 warnings
 
