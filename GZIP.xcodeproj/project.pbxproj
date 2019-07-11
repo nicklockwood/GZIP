@@ -23,6 +23,7 @@
 		3AE36CD21B8F5AEF00923C2D /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */; };
 		3AE36CD51B8F5AEF00923C2D /* GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CC21B8F598E00923C2D /* GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AE36CD61B8F5AEF00923C2D /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1BE0917228B5F77006800A0 /* NSData+SEGGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = C1BE0916228B5F77006800A0 /* NSData+SEGGZIP.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		3AE36CCA1B8F59E600923C2D /* NSData+GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GZIP.h"; sourceTree = "<group>"; };
 		3AE36CCB1B8F59E600923C2D /* NSData+GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GZIP.m"; sourceTree = "<group>"; };
 		3AE36CDB1B8F5AEF00923C2D /* GZIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GZIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1BE0915228B5F77006800A0 /* NSData+SEGGZIP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+SEGGZIP.h"; sourceTree = "<group>"; };
+		C1BE0916228B5F77006800A0 /* NSData+SEGGZIP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+SEGGZIP.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 			children = (
 				3A733BD71BA9B6F800089A82 /* UnitTests.m */,
 				3A733BD01BA9B6BD00089A82 /* Info.plist */,
+				C1BE0915228B5F77006800A0 /* NSData+SEGGZIP.h */,
+				C1BE0916228B5F77006800A0 /* NSData+SEGGZIP.m */,
 			);
 			path = GZIPTests;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3AE36CB51B8F598E00923C2D;
@@ -370,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1BE0917228B5F77006800A0 /* NSData+SEGGZIP.m in Sources */,
 				3A733BD81BA9B6F800089A82 /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
