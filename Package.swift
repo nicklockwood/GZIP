@@ -5,9 +5,6 @@ import PackageDescription
 
 let package = Package(
     name: "GZIP",
-    platforms: [
-        .iOS(.v9)
-    ],
     products: [
         .library(
             name: "GZIP",

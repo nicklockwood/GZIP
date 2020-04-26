@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.3.0](https://github.com/nicklockwood/GZIP/releases/tag/1.3.0) (2020-04-26)
+
+- Added support for Swift Package Manager
+- Fixed watchOS and tvOS targets
+- Combined platform-specific targets into one
+
 ## [1.2.3](https://github.com/nicklockwood/GZIP/releases/tag/1.2.3) (2018-11-19)
 
 - Fixed Xcode 10.1 warnings
