@@ -14,7 +14,7 @@
 
 @implementation NSData (SEGGZIP)
 
-void *_Nullable seg_libzOpen()
+void *_Nullable seg_libzOpen(void)
 {
     static void *libz;
     static dispatch_once_t onceToken;

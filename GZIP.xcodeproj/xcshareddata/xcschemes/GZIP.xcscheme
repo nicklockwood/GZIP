@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
+   LastUpgradeVersion = "1500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A733BCB1BA9B6BD00089A82"
+               BlueprintIdentifier = "01A377F2245609320040E02B"
                BuildableName = "GZIPTests.xctest"
                BlueprintName = "GZIPTests"
                ReferencedContainer = "container:GZIP.xcodeproj">

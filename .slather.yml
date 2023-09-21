@@ -1,6 +1,0 @@
-coverage_service: coveralls
-xcodeproj: GZIP.xcodeproj
-scheme: "GZIP-iOS"
-source_directory: GZIP/*
-ignore:
-  - GZIPTests/*

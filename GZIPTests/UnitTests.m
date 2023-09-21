@@ -41,7 +41,7 @@ Sed velit dignissim sodales ut eu. Ipsum nunc aliquet bibendum enim facilisis gr
 Eros donec ac odio tempor orci dapibus. Porttitor massa id neque aliquam vestibulum. Tristique senectus et netus et malesuada fames ac turpis. Amet dictum sit amet justo donec enim diam vulputate ut. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Faucibus ornare suspendisse sed nisi lacus sed. Ultrices tincidunt arcu non sodales neque sodales ut. Tempus iaculis urna id volutpat lacus laoreet. Sapien nec sagittis aliquam malesuada. Velit euismod in pellentesque massa placerat duis. Bibendum ut tristique et egestas. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec. Vulputate odio ut enim blandit volutpat maecenas volutpat..";
 
 
-static NSData *createRandomNSData()
+static NSData *createRandomNSData(void)
 {
     NSUInteger size = 10 * 1024 * 1024; // 10mb
     NSMutableData *data = [NSMutableData dataWithLength:size];

@@ -1,0 +1,33 @@
+name: build
+
+on:
+  push:
+  pull_request:
+jobs:
+  macos:
+    strategy:
+      fail-fast: false
+      matrix:
+        macos:
+          - 13
+        xcode:
+          - latest-stable
+    runs-on: macos-${{ matrix.macos }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build and Test
+        run: |
+          xcodebuild -scheme "GZIP" -sdk macosx clean build test -enableCodeCoverage YES -derivedDataPath Build/
+          cd Build/Build/ProfileData
+          cd $(ls -d */|head -n 1)
+          directory=${PWD##*/}
+          pathCoverage=Build/Build/ProfileData/${directory}/Coverage.profdata
+          cd ../../../../
+          xcrun llvm-cov export -format="lcov" -instr-profile $pathCoverage Build/Build/Products/Debug/GZIP.framework/GZIP > info.lcov
+      - name: Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          # the token is optional for a public repo, but including it anyway
+          token: 1132f70a-3f8e-4448-bc3e-e564311f2ced
+          env_vars: MD_APPLE_SDK_ROOT,RUNNER_OS,RUNNER_ARCH
