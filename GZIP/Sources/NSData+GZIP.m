@@ -1,7 +1,7 @@
 //
 //  GZIP.m
 //
-//  Version 1.3.0
+//  Version 1.3.1
 //
 //  Created by Nick Lockwood on 03/06/2012.
 //  Copyright (C) 2012 Charcoal Design

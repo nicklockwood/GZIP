@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.3.1](https://github.com/nicklockwood/GZIP/releases/tag/1.3.1) (2023-09-19)
+
+- Minimum deployment target for iOS is now 11.0.
+
 ## [1.3.0](https://github.com/nicklockwood/GZIP/releases/tag/1.3.0) (2020-04-26)
 
 - Added support for Swift Package Manager
