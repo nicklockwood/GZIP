@@ -15,7 +15,7 @@ jobs:
     runs-on: macos-${{ matrix.macos }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Build and Test
         run: |
           xcodebuild -scheme "GZIP" -sdk macosx clean build test -enableCodeCoverage YES -derivedDataPath Build/
@@ -26,7 +26,7 @@ jobs:
           cd ../../../../
           xcrun llvm-cov export -format="lcov" -instr-profile $pathCoverage Build/Build/Products/Debug/GZIP.framework/GZIP > info.lcov
       - name: Codecov
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           # the token is optional for a public repo, but including it anyway
           token: 1132f70a-3f8e-4448-bc3e-e564311f2ced
