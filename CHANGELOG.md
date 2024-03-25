@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.3.2](https://github.com/nicklockwood/GZIP/releases/tag/1.3.2) (2024-03-25)
+
+- Minimum deployment target for macOS is now 10.13
+- Minimum deployment target for tvOS is now 11.0
+- Updated podspec to reflect MIT license
+
 ## [1.3.1](https://github.com/nicklockwood/GZIP/releases/tag/1.3.1) (2023-09-19)
 
 - Minimum deployment target for iOS is now 11.0.
